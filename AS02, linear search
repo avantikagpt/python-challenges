@@ -1,0 +1,8 @@
+list = ['hello','apple','book','tree','pot','plant','table','word']
+z = input("Enter your search: ")
+
+for i in range(len(list)):
+    if list[i] == z:
+        print("found")
+    else:
+        print ("not found")
