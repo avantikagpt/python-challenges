@@ -1,0 +1,26 @@
+WordList = ["Awkward","Dwarves,","Haiku","Kiosk","Oxygen","Zombie","Yacht","Hyphen"]
+
+import random
+
+word = (random.choice(WordList))
+
+strikes = 6
+CorrectString=''
+
+print("This game is case-sensitive.")
+
+while strikes > 0:
+    guess = input("guess a character: ") 
+    if guess not in word:  
+        print("Wrong!")
+        strikes = strikes - 1
+        print("You have",strikes,"strikes remaining.")
+    elif guess in word:
+        print("Correct! You guessed",guess)
+        CorrectString = CorrectString + guess
+        print("You have",strikes,"strikes remaining.")
+    if CorrectString == word:
+        print ("You win! The word was",word)
+        break
+if strikes == 0:
+    print("You lose! The word was",word)
