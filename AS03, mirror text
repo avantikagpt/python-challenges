@@ -1,0 +1,2 @@
+joke = input("Enter a joke: ")
+print (joke[-1::-1])
