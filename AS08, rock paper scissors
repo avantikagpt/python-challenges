@@ -1,0 +1,35 @@
+while True:
+    ChoiceA = input("rock, paper or scissors? " )
+    ChoiceList = ["rock","paper","scissors"]
+    import random
+    ChoiceB = random.choice(ChoiceList)
+    while ChoiceB == "rock":
+        if ChoiceA in ["rock","Rock"]:
+            print("It's a tie")
+            break
+        elif ChoiceA in ["paper","Paper"]:
+            print("You win!")
+            break
+        else:
+            print("You lose.")
+            break
+    while ChoiceB == "paper":
+        if ChoiceA in ["paper","Paper"]:
+            print("It's a tie.")
+            break
+        elif ChoiceA in ["scissors","Scissors"]:
+            print("You win!")
+            break
+        else:
+            print("You lose.")
+            break
+    while ChoiceB == "scissors":
+        if ChoiceA in ["scissors","Scissors"]:
+            print("It's a tie")
+            break
+        elif ChoiceA in ["rock","Rock"]:
+            print("You win!")
+            break
+        else:
+            print("You lose.")
+            break
