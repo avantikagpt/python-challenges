@@ -1,0 +1,20 @@
+import random
+
+list = []
+
+def sort(list):
+    x = (len(list)-1)
+    while x > 0:
+       for i in range(x):
+           if list[i] > list[i+1]:
+                y = list[i]
+                list[i] = list[i+1]
+                list[i+1] = y
+       x = x - 1
+
+for i in range(9):
+    list.append(random.randint(1,100))
+
+print("The starting list is",list)
+sort(list)
+print("The sorted list is",list)
