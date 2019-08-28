@@ -1,0 +1,17 @@
+import random
+
+Number = random.randint(1,4)
+
+while True:
+    GuessNumber = int(input("Guess a number:"))
+    try:
+        ValidGuess = int(GuessNumber)
+    except ValueError:
+        print("Please input a WHOLE integer")
+    if ValidGuess == Number:
+        print("You guessed the number!")
+        break
+    elif ValidGuess > Number:
+        print ("The number is lower")
+    elif ValidGuess < Number:
+        print("The number is higher")
