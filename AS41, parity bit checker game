@@ -1,0 +1,25 @@
+import random
+
+print ("Type 'even' for even parity and 'odd' for odd parity. ")
+parity = ['even','odd']
+
+even = ['11110000','10101010','10011010','10111011','11111111','11100111']
+odd = ['11100000','10100010','10001010','10110011','11110111','11100011']
+
+n = random.choice(parity)
+
+if n == 'even':
+    print (random.choice(even))
+    x = input ("Is this odd or even parity? ")
+    if x == 'even':
+        print ("Correct!")
+    if x == 'odd:':
+        print ("Wrong, it's even.")
+
+if n == 'odd':
+    print (random.choice(odd))
+    y = input ("Is this odd or even parity? ")
+    if y == 'odd':
+        print ("Correct!")
+    if y == 'even':
+        print ("Wrong, it's even.")
