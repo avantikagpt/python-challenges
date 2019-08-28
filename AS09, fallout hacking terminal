@@ -1,0 +1,21 @@
+turns = 0 
+
+import random
+
+list = ['bag','pen','joy','bye','cat']
+
+word = random.choice(list)
+
+print ("You have 5 tries.")
+
+while turns < 5:
+    chose = input('Guess a word. ')
+    if chose == word:
+        print ("You win!")
+        break
+    for i in chose:
+        if i in word:
+            print (i,"is in the word! But you did not guess the right word. ")
+    turns += 1
+    if turns == 5:
+        print ("You lose!")
