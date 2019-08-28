@@ -1,0 +1,6 @@
+l = int(input("Enter the length: "))
+
+l2 = l/1.61
+
+print ("The ratio is: ")
+print(round(l2,1)," : ", l)
