@@ -1,0 +1,9 @@
+pn = int(input("How many photos do you have? "))
+total = 0
+
+for i in range(pn):
+    reso = int(input("Enter the resolution for image: "))
+    cd = int(input("Enter the color depth for image: "))
+    total += (reso*cd)
+
+print("The size of all the images is", total)
