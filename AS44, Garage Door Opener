@@ -1,0 +1,51 @@
+door = 'CLOSED'
+
+import time
+
+while True:
+    if door == 'CLOSED':
+        button = input("Would you like to click the button? ")
+        if button in ['yes','Yes','y','Y']:
+            print('Button clicked.')
+            door = 'OPENING'
+            print ("Door:", door)
+            time.sleep(1)
+            button = input("Would you like to click the button? ")
+            if button in ['yes','Yes','y','Y']:
+                print('Button clicked.')
+                door = 'STOPPED WHILE OPENING'
+                print ("Door:", door)
+                button = input("Would you like to click the button? ")
+                if button in ['yes','Yes','y','Y']:
+                    print('Button clicked.')
+                    door = 'CLOSING'
+            print ("Door:", door)
+            time.sleep(2)
+            print("Cycle complete")
+            door = 'OPEN'
+            print ("Door:", door)
+        else:
+            break
+    elif door == 'OPEN':
+        button = input("Would you like to click the button? ")
+        if button in ['yes','Yes','y','Y']:
+            print('Button clicked.')
+            door = 'CLOSING'
+            print ("Door:", door)
+            time.sleep(2)
+            button = input("Would you like to click the button? ")
+            if button in ['yes','Yes','y','Y']:
+                print('Button clicked.')
+                door = 'STOPPED WHILE CLOSING'
+                print ("Door:", door)
+                button = input("Would you like to click the button? ")
+                if button in ['yes','Yes','y','Y']:
+                    print('Button clicked.')
+                    door = 'OPENING'
+            print ("Door:", door)
+            time.sleep(2)
+            print("Cycle complete")
+            door = 'CLOSED'
+            print ("Door:", door)
+        else:
+            break
