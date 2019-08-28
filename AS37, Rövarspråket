@@ -1,0 +1,13 @@
+consonants = "bcdfghjklmnpqrstvwxyz"
+
+text1 = input("Enter your text: ")
+
+text2 = ''
+
+for i in text1:
+    if i in consonants:
+        text2 += i + "o" + i
+    else:
+        text2 += i
+
+print (text2)
