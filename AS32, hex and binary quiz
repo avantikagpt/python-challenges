@@ -1,0 +1,43 @@
+print ("Before you enter your answer, do the following:")
+print ("If its in hex, put letters in lowercase, and put 0x before the number. eg- 0x1F")
+print ("If its in binary, put 0b before the number. eg- 0b10101")
+print ("This quiz has 5 questions")
+print ("")
+correct = 0
+
+a1 = input("Convert 10101010 to hex: ")
+if a1 == hex(170):
+    print ("Correct!")
+    correct += 1
+else:
+    print ("wrong! the correct answer is", hex(170))
+
+a2 = input("Convert 0xff to binary: ")
+if a2 == bin(0xff):
+    print ("Correct!")
+    correct += 1
+else:
+    print ("wrong! the correct answer is", bin(0xff))
+
+a3 = input("Convert 56 to binary: ")
+if a3 == bin(56):
+    print ("Correct!")
+    correct += 1
+else:
+    print ("wrong! the correct answer is", bin(56))
+
+a4 = input("Convert 11010101 to denary: ")
+if a4 == 213:
+    print ("Correct!")
+    correct += 1
+else:
+    print ("wrong! the correct answer is", 213)
+
+a5 = input("Convert 11101001 to hex: ")
+if a5 == hex(233):
+    print ("Correct!")
+    correct += 1
+else:
+    print ("wrong! the correct answer is", hex(233))
+
+print ("Your score is: ", correct,"/5")
