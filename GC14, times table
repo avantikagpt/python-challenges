@@ -1,0 +1,7 @@
+number = int(input("What number would you like the times table of? "))
+
+n = 0 
+
+while n <= 15:
+    print(number*n)
+    n = n + 1
