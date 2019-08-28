@@ -1,0 +1,26 @@
+word = input("Enter a word: ")
+
+status = 'Naughty'
+
+vowels = 0
+for i in word:
+    if (i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
+        vowels = vowels + 1
+
+if vowels >= 3:
+    status = "Nice"
+elif vowels < 3:
+    status = "Naughty"
+
+bad_string = ['ab','cd','pq','xy']
+for phrase in bad_string:
+    if phrase in word:
+        status = "Naughty"
+
+good_string = ['aa','bb','cc','dd','ee','ff','gg','hh','ii','jj','kk','ll','mm','nn','oo','pp','qq','rr','ss','tt','uu','vv','ww','xx','yy','zz']
+
+for phrase in good_string:
+    if phrase in word:
+        status = "Nice"
+
+print (status)
