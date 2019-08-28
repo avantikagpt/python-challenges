@@ -1,0 +1,13 @@
+AccountMoney = float(input("How much money is in your bank account?"))
+X = float(input("How much money do you want to withdraw? "))
+
+if X % 5 != 0:
+    print ("Please enter a multiple of 5 only. ")
+    X = int(input("How much money do you want to withdraw? "))
+    
+if X > (AccountMoney+0.50):
+    print ("You don't have this much money! Please enter an amount you have.")
+    X = int(input("How much money do you want to withdraw? "))
+    
+AccountBalance = AccountMoney - (X + 0.50)
+print ("Your new account balance is",AccountBalance)
