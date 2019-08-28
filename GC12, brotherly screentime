@@ -1,0 +1,4 @@
+time = float(input("How many hours are you allowed on the PS4?" ))
+children = int(input("How many children are there? "))
+
+print ("Each of you can play",(time/children),"hours a day.")
