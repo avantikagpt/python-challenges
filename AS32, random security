@@ -1,0 +1,8 @@
+FloorsNumber = int(input("How many floors does the building have? - maximum 10"))
+
+import random
+import randint
+
+GuardedFloors = randint(0,(FloorsNumber + 1))
+
+print(GuardedFloors)
