@@ -1,0 +1,19 @@
+phrase = str(input("Please enter your phrase: "))
+
+l = 0
+r = 0
+
+for i in range (len(phrase)):
+    if "(" in phrase[i]:
+        l += 1
+        
+for c in range (len(phrase)):
+    if ")" in phrase[c]:
+        r += 1
+        
+if l == r:
+    print ("Brackets even")
+elif l != r:
+    print ("Brackets uneven")
+else:
+    print ("Error, please try again.")
