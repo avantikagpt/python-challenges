@@ -1,0 +1,16 @@
+import math
+
+age = 18
+old_enough_to_get_driving_licence = age >= 17
+print(old_enough_to_get_driving_licence)
+type(old_enough_to_get_driving_licence)
+
+n = 7
+print (n % 2 == 0 or n % 3 == 0 )
+
+x = 10
+if x < 0:
+    print("The negative number ",  x, " is not valid here.")
+    x = 42
+    print("I've decided to use the number 42 instead.")
+print("The square root of ", x, "is", math.sqrt(x))
