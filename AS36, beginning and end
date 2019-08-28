@@ -1,0 +1,12 @@
+list = []
+
+a = int(input("How many numbers are in your list? "))
+
+for i in range (a):
+    list.append(input("What is your number? "))
+
+list2 = []
+
+list2.append(list[::len(list)-1])
+
+print(list2)
