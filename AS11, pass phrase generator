@@ -1,0 +1,10 @@
+import random
+import string
+
+password = []
+
+for i in range(9):
+    password.append(random.choice(string.ascii_letters))
+    password.append(random.randint(0,101))
+    
+print (password)
