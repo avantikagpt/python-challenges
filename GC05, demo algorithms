@@ -1,0 +1,9 @@
+x = int(input("Enter a number: "))
+y = int(input("Enter another number: "))
+z = x+y
+
+if z > 11:
+    z = 5
+
+for i in range(z):
+    print("The sum of your first two numbers is",(x+y))
