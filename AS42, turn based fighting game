@@ -1,0 +1,49 @@
+print ("The moves in this game are: ")
+print ("1. jab")
+print ("2. roundhouse kick")
+print ("3. uppercut")
+print ("4. elbow in the ribs")
+print ("5. spit")
+print (" ")
+print ("Each move damages your opponents health by a certain undisclosed amount, so choose wisely!")
+print (" ")
+p1health = 50
+p2health = 50
+
+p1moves = []
+p2moves = []
+
+while p1health > 0 and p2health > 0:
+    x = int(input("PLAYER 1, enter the serial number of the move you want to play: "))
+    print (" ")
+    p1moves.append(x)
+    if x == 1:
+        p2health -= 7
+    elif x == 2:
+        p2health -= 10
+    elif x == 3:
+        p2health -= 15
+    elif x == 4:
+        p2health -= 8
+    elif x == 5:
+        p2health -= 5
+    if p2health <= 0:
+        print ("PLAYER 2, you lose. ")
+        print ("the moves PLAYER 1 use are ",p1moves)
+        break
+    y = int(input("PLAYER 2, enter the serial number of the move you want to play: "))
+    p2moves.append(y)
+    if y == 1:
+        p1health -= 7
+    elif y == 2:
+        p1health -= 10
+    elif y == 3:
+        p1health -= 15
+    elif y == 4:
+        p1health -= 8
+    elif y == 5:
+        p1health -= 5
+    if p1health <= 0:
+        print ("PLAYER 1, you lose. ")
+        print ("the moves PLAYER 2 use are ",p2moves)
+        break
