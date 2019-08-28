@@ -1,0 +1,7 @@
+import random
+
+answers = ['It is certain.','It is decidedly so.','Without a doubt.','Yes - definitely.','You may rely on it.','Ask again later.','Cannot predict now.','Better not tell you now.','Answer uncertain. Try again.','My sources say no.','Dont count on it.','My reply is no.','Very doubtful.']
+
+while True:
+    q = input("Ask a yes or no question. ")
+    print (random.choice(answers))
