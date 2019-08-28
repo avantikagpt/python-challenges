@@ -1,0 +1,10 @@
+PyramidSize=int(input('Enter your pyramid size: '))
+
+Xnumber = 1
+list = ''
+for i in range(PyramidSize):
+    for c in range(Xnumber):
+        list = list + 'x'
+    print(list)
+    list=''
+    Xnumber = Xnumber + 2
