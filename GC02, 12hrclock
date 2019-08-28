@@ -1,0 +1,7 @@
+TwelveHourTime = int(input("What is the time in the format hhmm?"))
+AmPm = input("Is it am or pm?")
+
+if AmPm in ["pm","PM","p.m.","P.M"]:
+    print("The time is", TwelveHourTime + 1200)
+else:
+    print(0,TwelveHourTime)
