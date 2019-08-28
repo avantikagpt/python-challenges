@@ -1,0 +1,17 @@
+total = 0
+words = 0
+
+txt = input("enter text: ")
+txt = txt.lower()
+
+letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+for x in txt:
+    if x in letters:
+        total += 1
+    elif x == ' ':
+        words += 1
+
+print (total)
+print (words)
+
+print ("average word length is", total/(words+1))
