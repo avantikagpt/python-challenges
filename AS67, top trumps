@@ -1,0 +1,29 @@
+import random
+import time
+cards = ['c1','c2','c3','c4','c5','c6','c7','c8','c9','c10','c11','c12','c13','c14','c15']
+p1c = []
+p2c = []
+p1wins = 0
+p2wins = 0
+
+for i in range (5):
+    ca1 = random.choice(cards)
+    point = (cards.index(ca1)) + 1
+    print ("Player one, your card for this round is", ca1, ",worth", point,"points")
+    cards.remove(ca1)
+    ca2 = random.choice(cards)
+    point2 = (cards.index(ca2)) + 1
+    print ("Player one, your card for this round is", ca2, ",worth", point2,"points")
+    cards.remove(ca2)
+    if point > point2:
+        print ("player 2 wins. ")
+        p2wins += 1
+    elif point2 > point:
+        print ("player 1 wins. ")
+        p1wins += 1
+    time.sleep(1)
+
+if p1wins > p2wins:
+    print ("Overall, Player 1 wins. ")
+if p1wins < p2wins:
+    print ("Overall, Player 2 wins. ")
