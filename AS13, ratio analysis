@@ -1,0 +1,9 @@
+type = input("Do you want to calculate GPM or NPM? ")
+sales = float(input("What were your sales? "))
+
+if type in ["GPM","gpm"]:
+    gprofit = float(input("What was your gross profit? "))
+    print ("Your gross profit margin was",((gprofit/sales)*100))
+elif type in ["NPM","npm"]:
+    nprofit = float(input("What was your net profit? "))
+    print ("Your net profit margin was",((nprofit/sales)*100))
