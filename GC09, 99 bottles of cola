@@ -1,0 +1,6 @@
+BottlesOfCola = 99
+
+for i in range (98):
+    print (BottlesOfCola, "bottles of cola, take one down, pass it around")
+    BottlesOfCola = BottlesOfCola - 1
+    print (BottlesOfCola, "bottles on the wall")
