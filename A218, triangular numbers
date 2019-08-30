@@ -1,0 +1,2 @@
+n = int(input("input the term you want: "))
+print((n/2)*(n+1))
