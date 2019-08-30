@@ -1,0 +1,30 @@
+x = input("Would you like to convert from normal to roman (type in '1') or from roman to normal (type in '0')? ")
+
+if x == '1':
+    conv1 = [[1000, 'M'], [900, 'CM'], [500, 'D'], [400, 'CD'],[ 100, 'C'], [ 90, 'XC'], [ 50, 'L'], [ 40, 'XL'],[  10, 'X'], [  9, 'IX'], [  5, 'V'], [  4, 'IV'],[   1, 'I']]
+    num = int(input("Enter a number between 0 and 3999: "))
+    roman = ''
+    i = 0
+    while num > 0:
+            while conv1[i][0] > num: i+=1
+            roman += conv1[i][1]
+            num -= conv1[i][0]
+    print(roman)
+if x == '0':
+    conv = {'I': 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
+    numb = 0
+    check = []
+    roman = input("Enter a roman number between I and MMMCMXCIX: ")
+    for i in range(len(roman)):
+        check.append(conv[list(roman)[i]])
+    for i in range(len(roman)):
+        if i == len(roman)-1:
+            numb += check[i]
+        else:
+            if check[i] == check[i+1]:
+                numb += check[i]
+            elif check[i] > check[i+1]:
+                numb += check[i]
+            else:
+                total = numb - check[i]
+    print(numb)
