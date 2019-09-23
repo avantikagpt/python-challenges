@@ -1,0 +1,24 @@
+import random
+
+guessnum = 0
+
+number = random.randint(1,111)
+
+print ("I'm thinking of a number between 1 and 111 inclusive. Have a guess: ")
+
+guess = int(input("Enter your NUMBER guess: "))
+guessnum += 1
+
+while guess != number:
+    if number > guess:
+        print ("The number is higher. ")
+        guess = int(input("Enter your NUMBER guess: "))
+        guessnum += 1
+    if number < guess:
+        print ("The number is lower. ")
+        guess = int(input("Enter your NUMBER guess: "))
+        guessnum += 1
+    if guess == number:
+        print ("You win!")
+        print("Number of guesses:", guessnum)
+        break
