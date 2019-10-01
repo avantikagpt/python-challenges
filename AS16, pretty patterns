@@ -1,0 +1,27 @@
+import turtle
+
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+wn.title("Alex makes stars")
+
+t = turtle.Turtle()
+
+t.speed(0)
+def up():
+    t.pu()
+    t.fd(350)
+    t.pd()
+
+def star():
+    for i in range(5):
+        t.forward(100)
+        t.left(144)
+
+t.lt(180-144)
+for i in range(5):
+    star()
+    up()
+    t.rt(144)
+    star()
+
+wn.mainloop()
