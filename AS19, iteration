@@ -1,0 +1,8 @@
+def sum_of_squares(xs):
+    sum = 0
+    for i in (xs):
+        sum += i**2
+
+    print (sum)
+
+sum_of_squares([2,3,4])
