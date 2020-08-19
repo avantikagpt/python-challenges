@@ -1,0 +1,14 @@
+def remove_all(substring, string):
+    for i in string:
+
+        if substring in string:
+
+            word = string.replace(substring, '')
+
+            return word
+
+
+
+new_word = remove_all("iss", "Mississippi")
+
+print(new_word)
