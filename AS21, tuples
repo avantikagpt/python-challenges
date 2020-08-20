@@ -1,0 +1,11 @@
+# b = (c)
+# (name, age, studies) = b
+#
+# print (b)
+
+def q1(x):
+    print(x)
+
+
+tuple = ("Bob", 19, "CS")
+q1(tuple)
