@@ -1,0 +1,24 @@
+# create different functions to calculate the area and the circumference of the circle
+# extension: create a function to find the area of a sector
+
+def circleArea (radius):
+    area = (22/7)*(radius**2)
+    print(area)
+
+def circleCircumference (radius):
+    circumference = (22/7)*(radius*2)
+    print(circumference)
+
+circleArea(5)
+circleCircumference (5)
+
+def sectorArea (radius, angle):
+    sectorarea = (angle/360) *((22/7)*(radius**2))
+    print(sectorarea)
+
+def sectorCircumference (radius, angle):
+    sectorcirc = (angle/360) *((22/7)*(radius*2))
+    print(sectorcirc)
+
+sectorArea (5, 210)
+sectorCircumference (5, 210)
