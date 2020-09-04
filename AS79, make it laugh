@@ -1,0 +1,10 @@
+def make_it_laugh(string):
+    laugh = ''
+    for i in string:
+        if i in ['a','e','i','o','u','A','E','I','O','U']:
+            laugh += 'haha'
+        else:
+            laugh += i
+    print(laugh)
+
+make_it_laugh('computer')
