@@ -1,0 +1,8 @@
+def swap(x, y): 
+     print("before swap statement: x:", x, "y:", y)
+     temp = x
+     x = y
+     y = temp
+     print("after swap statement: x:", x, "y:", y)
+
+swap(5,10)
