@@ -1,0 +1,11 @@
+#create a function that outputs the sum and product of all the numbers in a list
+def x(numbers):
+    sum = 0
+    multiply = 1
+    for x in numbers:
+        sum += x
+        multiply *= x
+    print (multiply)
+    print (sum)
+
+x([8, 2, 3, 1, 7])
