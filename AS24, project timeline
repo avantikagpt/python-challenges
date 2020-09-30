@@ -1,0 +1,15 @@
+import datetime
+
+a = int(input("What is the start year?"))
+b = int(input("What is the start month?"))
+c = int(input("What is the start day?"))
+
+x = int(input("What is the end year?"))
+y = int(input("What is the end month?"))
+z = int(input("What is the end day?"))
+
+start = datetime.datetime(a, b, c)
+end = datetime.datetime(x, y, z)
+
+d = (start-end)
+print (d)
