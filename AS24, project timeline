@@ -11,5 +11,5 @@ z = int(input("What is the end day?"))
 start = datetime.datetime(a, b, c)
 end = datetime.datetime(x, y, z)
 
-d = (start-end)
+d = (end-start)
 print (d)
