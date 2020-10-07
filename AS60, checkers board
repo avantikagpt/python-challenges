@@ -1,0 +1,29 @@
+n = int(input("Number of rows: "))
+m = int(input("Number of columns: "))
+
+odd_board = []
+even_board = []
+board = [odd_board,even_board]
+
+def odd_lines():
+    for i in range(m):
+        if i%2 == 0:
+            odd_board.append(".")
+        else:
+            odd_board.append("*")
+
+def even_lines():
+    for i in range(m):
+        if i%2 == 0:
+            even_board.append("*")
+        else:
+            even_board.append(".")
+
+odd_lines()
+even_lines()
+
+for x in range(n):
+    if x%2 == 0:
+        print(*odd_board)
+    else:
+        print(*even_board)
