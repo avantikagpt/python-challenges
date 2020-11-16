@@ -1,0 +1,14 @@
+import math
+
+power = int(input("what is (x+y) to the power of: "))
+
+def formula(power,i):
+    coeff = int((math.factorial(power))/((math.factorial(i))*math.factorial(power-i)))
+    return coeff
+
+binomial = ""
+for i in range(power+1):
+    binomial += str(formula(power, i))+"x^"+str((power-i))+"y^"+str(i)+" + "
+binomial = binomial[:-3]
+
+print (binomial)
